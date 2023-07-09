@@ -28,16 +28,17 @@
 
 
 //  GETELEMENTBYCLASSNAME  //
-// var items = document.getElementsByClassName('list-group-item');
-// console.log(items);
-// console.log(items[1]);
+var ite = document.getElementsByClassName('list-group-item')
+// console.log(ite);
+// console.log(ite[1]);
 // item[1].textContent = 'Hello 2' ;
-// item[1].style.fontweight = 'bold' ;
-// item[1].style.backgroundcolor = 'yellow' ;
+// item[1].style.fontWeight = 'bold' ;
+ite[2].style.backgroundColor = 'green' ;
 
-// for(let i=0;i<items.length;i++){
-//     items[i].style.backgroundColor = '#f4f4f4';
-// }
+for(let i=0;i<ite.length;i++){
+    ite[i].style.color = 'red';
+    ite[i].style.fontWeight='bold';
+}
 
 //  GETELEMENTBYTAGNAME  //
 
