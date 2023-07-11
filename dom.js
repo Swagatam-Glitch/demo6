@@ -73,3 +73,9 @@ headerTitle.style.borderBottom  = 'solid 3px #000';
 let Items = document.getElementsByClassName('title');
 console.log(Items);
 Items[0].style.fontWeight = 'bold';
+
+let newli=document.getElementsByClassName('list-group');
+newli[0].style.color='blue'
+
+let newlis=document.getElementsByTagName('li');
+newlis[4].style.backgroundColor='yellow';
