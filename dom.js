@@ -34,6 +34,8 @@ var ite = document.getElementsByClassName('list-group-item')
 // item[1].textContent = 'Hello 2' ;
 // item[1].style.fontWeight = 'bold' ;
 ite[2].style.backgroundColor = 'green' ;
+ite[1].style.backgroundColor = 'green' ;
+ite[3].style.visibility='hidden'
 
 for(let i=0;i<ite.length;i++){
     ite[i].style.color = 'red';
@@ -73,3 +75,5 @@ headerTitle.style.borderBottom  = 'solid 3px #000';
 let Items = document.getElementsByClassName('title');
 console.log(Items);
 Items[0].style.fontWeight = 'bold';
+
+document.getElementsByTagName('li').style.visibility='hidden'
