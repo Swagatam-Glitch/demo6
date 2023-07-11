@@ -75,5 +75,3 @@ headerTitle.style.borderBottom  = 'solid 3px #000';
 let Items = document.getElementsByClassName('title');
 console.log(Items);
 Items[0].style.fontWeight = 'bold';
-
-document.getElementsByTagName('li').style.visibility='hidden'
