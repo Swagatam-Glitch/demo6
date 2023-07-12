@@ -75,3 +75,60 @@ headerTitle.style.borderBottom  = 'solid 3px #000';
 let Items = document.getElementsByClassName('title');
 console.log(Items);
 Items[0].style.fontWeight = 'bold';
+
+//   parent element   //
+let itemListmain = document.querySelector('#items');
+itemListmain.parentElement.style.backgroundColor='#f4f4f4';
+
+//  child nodes  //
+itemListmain.children[1].style.backgroundColor='blue'
+//  first child  //
+console.log(itemListmain.firstChild);
+// firstelement child  //
+itemListmain.firstElementChild.textContent='firstElementchild'
+
+// last child  //
+console.log(itemListmain.lastChild);
+
+//  lastelement child  //
+itemListmain.lastElementChild.textContent='lastElementChild'
+
+
+//  next sibling  //
+console.log(itemListmain.nextSibling);
+
+//  nextElement sibling  //
+console.log(itemListmain.nextElementSibling);
+
+//  Previous sibling  //
+console.log(itemListmain.previousSibling);
+
+//  PreviousElement sibling  //
+console.log(itemListmain.previousElementSibling);
+itemListmain.previousElementSibling.style.color='green'
+//  create element  //
+
+
+//create div//
+let newDiv=document.createElement('div');
+//  add class  //
+newDiv.className='hello';
+//  add id //
+newDiv.id='hello1'
+
+//  set attribute  //
+newDiv.setAttribute('title','Hello Div');
+//  create textnode  //
+let newDivText=document.createTextNode('Hello World div');
+//  add text to div  //
+newDiv.appendChild(newDivText);
+
+
+let container= document.querySelector('header .container');
+let h1=document.querySelector('header h1');
+
+console.log(newDiv);
+
+newDiv.style.fontSize='50px';
+
+container.insertBefore(newDiv, h1)
