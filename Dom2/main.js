@@ -51,6 +51,31 @@ function addItem(e){
   itemList.appendChild(li);
 }
 
+// Add Description //
+form.addEventListener('submit', addDescription);
+
+function addDescription(e){
+    e.preventDefault();
+
+    // get input value//
+    let newDes = document.getElementById('items');
+
+    // create new element li element //
+    let li = document.createElement('li');
+
+    // add class
+    li.className='list-group-item';
+
+    li.appendChild(document.createTextNode(newDes));
+
+    itemList.appendChild(li);
+
+
+
+}
+
+
+
 // Remove item
 function removeItem(e){
   if(e.target.classList.contains('delete')){
